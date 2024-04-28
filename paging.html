@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Replacement Simulation</title>
+  <link rel="stylesheet" type="text/css" href="MemoryAllocation.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Page Replacement Algorithm</h1>
+    <label for="frames">Number of Frames:</label>
+    <input type="number" id="frames" name="frames"><br>
+    <label for="requests">Total Number of Page Requests:</label>
+    <input type="number" id="requests" name="requests"><br>
+    <label for="references">Reference String:</label>
+    <textarea id="references" name="references"></textarea><br><br>
+    <button onclick="FIFOPageReplacement()">FIFO Page Replacement Algorithm</button>
+    <button onclick="LFUPageReplacement()">LFU Page Replacement Algorithm</button>
+    <button onclick="OptimalPageReplacement()">Optimal Page Replacement Algorithm</button>
+    <div id="output"></div>
+  </div>
+  <script src="paging.js"></script>
+</body>
+</html>
